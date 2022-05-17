@@ -17,6 +17,7 @@ srun -p sched_mit_hill --reservation="me-computing-pilot" --mem=0 -N 1 --exclusi
 
 ```
 cat > testjob.slurm <<'EOF'
+#!/bin/bash
 echo $SLURM_JOBID
 EOF
 
